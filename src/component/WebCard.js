@@ -30,21 +30,19 @@ export const WebCard = (props) => {
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    image="https://images.unsplash.com/photo-1600132806608-231446b2e7af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
-                    title="Contemplative Reptile"
+                    image={props.pocketProps.imageUrl}
+                    title={props.pocketProps.imageTitle}
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        {props.projectName}
+                        {props.pocketProps.projectName}
                     </Typography>
                     <Typography
                         variant="body2"
                         color="textSecondary"
                         component="p"
                     >
-                        Lizards are a widespread group of squamate reptiles,
-                        with over 6,000 species, ranging across all continents
-                        except Antarctica
+                        {props.pocketProps.projectBody}
                     </Typography>
                 </CardContent>
             </CardActionArea>
