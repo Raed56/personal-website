@@ -1,10 +1,9 @@
-import { WebCard } from "./component/WebCard";
+import { Projects } from "./component/Projects";
 
 function App() {
     return (
         <div>
-            Hello World!
-            <WebCard />
+            <Projects />
         </div>
     );
 }

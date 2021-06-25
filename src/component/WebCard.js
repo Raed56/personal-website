@@ -14,14 +14,15 @@ import {
 
 const useStyles = makeStyles({
     root: {
-        maxWidth: 345,
+        maxWidth: 350,
+        textAlign: "left",
     },
     media: {
         height: 140,
     },
 });
 
-export const WebCard = () => {
+export const WebCard = (props) => {
     const classes = useStyles();
 
     return (
@@ -34,7 +35,7 @@ export const WebCard = () => {
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Lizard
+                        {props.projectName}
                     </Typography>
                     <Typography
                         variant="body2"
