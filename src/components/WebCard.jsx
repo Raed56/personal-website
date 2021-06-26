@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/components/WebCard.scss";
+import { Button } from "./Button";
 
 export const WebCard = () => {
     return (
@@ -17,6 +18,15 @@ export const WebCard = () => {
                     built using React and Sass. It showcases all my skills
                     ,experiences, projects and contact information.
                 </p>
+                <div className="card-body-language">
+                    <p>
+                        <span className="card-body-language-built-with">
+                            Built with:
+                        </span>
+                        <span className="card-body-language-tags">#React</span>
+                        <span className="card-body-language-tags">#Sass</span>
+                    </p>
+                </div>
             </div>
         </div>
     );
