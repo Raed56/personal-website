@@ -2,8 +2,8 @@
 
 .card {
     max-width: 450px;
-    min-height: 624px;
-    border-radius: 6px;
+    min-height: 600px;
+    border-radius: 0.75rem;
     background-color: #fff;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
         0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -43,6 +43,14 @@
                 font-family: "Fira Code", monospace;
                 background-color: #edf2f6;
                 border-radius: 1000px;
+            }
+        }
+        &-footer {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 25px;
+            & .btn:first-child {
+                margin-right: 16px;
             }
         }
     }

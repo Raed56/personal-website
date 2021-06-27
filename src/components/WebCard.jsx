@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/components/WebCard.scss";
-import { Button } from "./Button";
+import { ButtonSecondary } from "./ButtonSecondary";
+import { ButtonPrimary } from "./ButtonPrimary";
 
 export const WebCard = () => {
     return (
@@ -27,7 +28,20 @@ export const WebCard = () => {
                         <span className="card-body-language-tags">#Sass</span>
                     </p>
                 </div>
-                <Button />
+                <div className="card-body-footer">
+                    <div className="btn">
+                        <ButtonPrimary
+                            buttonText="Visit Site"
+                            href="https://github.com/Raed56"
+                        />
+                    </div>
+                    <div className="btn">
+                        <ButtonSecondary
+                            buttonText="Github"
+                            href="https://github.com/Raed56/personal-website"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     );
