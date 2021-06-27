@@ -1,0 +1,14 @@
+@import "../index.scss";
+.project-container {
+    &-row {
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+    &-col {
+        margin-top: 40px;
+        @include screen-size-up($md) {
+            margin-right: 40px;
+        }
+    }
+}
