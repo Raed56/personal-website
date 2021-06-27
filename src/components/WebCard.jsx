@@ -3,7 +3,13 @@ import "../styles/components/WebCard.scss";
 import { ButtonSecondary } from "./ButtonSecondary";
 import { ButtonPrimary } from "./ButtonPrimary";
 
-export const WebCard = () => {
+export const WebCard = ({
+    cardTitle,
+    cardBody,
+    languageTags,
+    githubLink,
+    liveLink,
+}) => {
     return (
         <div className="card">
             <div className="card-media">
@@ -13,32 +19,37 @@ export const WebCard = () => {
                 />
             </div>
             <div className="card-body">
-                <h2>Personal Website</h2>
-                <p>
-                    This is the first iteration of my personal website that i
-                    built using React and Sass. It showcases all my skills
-                    ,experiences, projects and contact information.
-                </p>
+                <h2>{cardTitle}</h2>
+                <p>{cardBody}</p>
                 <div className="card-body-language">
                     <p>
                         <span className="card-body-language-built-with">
                             Built with:
                         </span>
-                        <span className="card-body-language-tags">#React</span>
-                        <span className="card-body-language-tags">#Sass</span>
+
+                        {languageTags.map((languageTag, index) => {
+                            return (
+                                <span
+                                    key={index}
+                                    className="card-body-language-tags"
+                                >
+                                    #{languageTag}
+                                </span>
+                            );
+                        })}
                     </p>
                 </div>
                 <div className="card-body-footer">
                     <div className="btn">
                         <ButtonPrimary
                             buttonText="Visit Site"
-                            href="https://github.com/Raed56"
+                            href={liveLink}
                         />
                     </div>
                     <div className="btn">
                         <ButtonSecondary
                             buttonText="Github"
-                            href="https://github.com/Raed56/personal-website"
+                            href={githubLink}
                         />
                     </div>
                 </div>
