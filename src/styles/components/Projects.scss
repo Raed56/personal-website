@@ -1,14 +1,20 @@
 @import "../index.scss";
 .project-container {
+    // width: 100%;
+    // max-width: 1600px;
+    // margin: 0 auto;
     &-row {
         display: flex;
         flex-wrap: wrap;
+        // align-items: center;
+        // justify-content: center;
     }
     &-col {
         margin-top: 40px;
 
         @include screen-size-up($md) {
             margin-right: 40px;
+            /*margin-left: 40px;*/
         }
     }
 }
