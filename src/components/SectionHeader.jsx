@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/components/SectionHeader.scss";
 
-export const SectionHeader = () => {
+export const SectionHeader = ({ headerText }) => {
     return (
         <div>
-            <h1 className="heading">My Projects</h1>
+            <h1 className="heading">{headerText}</h1>
             <div className="border"></div>
         </div>
     );

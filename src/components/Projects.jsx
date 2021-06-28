@@ -6,7 +6,7 @@ import { WebCard } from "./WebCard";
 export const Projects = () => {
     return (
         <div className="project-container">
-            <SectionHeader />
+            <SectionHeader headerText="My Projects" />
             <div className="project-container-row">
                 <div className="project-container-col">
                     <WebCard
