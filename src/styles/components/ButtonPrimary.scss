@@ -25,4 +25,8 @@
     &:hover {
         background-color: #3730a3;
     }
+    @include screen-size-down($sm) {
+        font-size: 14.5px;
+        padding: 8.33px 13.33px;
+    }
 }

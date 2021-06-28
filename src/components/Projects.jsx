@@ -43,8 +43,9 @@ export const Projects = () => {
                     <WebCard
                         cardImage="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
                         cardTitle="Future MERN Application"
-                        cardBody="Upcoming application which Niloy and I will be building over the summer 2021."
-                        languageTags={["MongoDB", "Express", "React", "NodeJS"]}
+                        cardBody="Upcoming application which Niloy and I will be building over the summer 2021.I am writing stuff here to make the description four lines for a nice view."
+                        languageTags={["MongoDB", "React", "NodeJS"]}
+                        liveLink="https://github.com/Raed56"
                     />
                 </div>
             </div>

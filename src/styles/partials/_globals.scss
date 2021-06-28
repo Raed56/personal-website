@@ -8,3 +8,31 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: #f5f8fa;
 }
+
+@mixin responsive-container {
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+    }
+}
+
+.page-container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include responsive-container;
+}
