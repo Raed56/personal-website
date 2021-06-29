@@ -7,10 +7,11 @@
         align-items: center;
     }
     &-col {
-        margin-top: 40px;
+        margin-top: 50px; //was 40px
 
         @include screen-size-up($md) {
-            margin-right: 40px;
+            margin-right: 30px; //was 40px
+            margin-left: 30px; //added
         }
     }
 }
