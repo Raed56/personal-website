@@ -1,8 +1,10 @@
-import { Projects } from "./components/Projects";
+import Projects from "./components/Projects";
+import Home from "./components/pages/Home";
 
 function App() {
     return (
         <div className="page-container">
+            <Home />
             <Projects />
         </div>
     );

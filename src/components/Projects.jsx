@@ -3,7 +3,7 @@ import "../styles/components/Projects.scss";
 import { SectionHeader } from "./SectionHeader";
 import { WebCard } from "./WebCard";
 
-export const Projects = () => {
+const Projects = () => {
     return (
         <div className="project-container">
             <SectionHeader headerText="My Projects" />
@@ -52,3 +52,5 @@ export const Projects = () => {
         </div>
     );
 };
+
+export default Projects;

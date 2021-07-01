@@ -3,15 +3,14 @@
     &-row {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
     }
     &-col {
         margin-top: 50px; //was 40px
 
-        @include screen-size-up($md) {
-            margin-right: 30px; //was 40px
-            margin-left: 30px; //added
+        @include screen-size-down($md) {
+            justify-content: center;
         }
     }
 }

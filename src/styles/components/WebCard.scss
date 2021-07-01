@@ -28,6 +28,9 @@
     }
     &-body {
         padding: 12px 24px;
+        border-bottom-left-radius: 0.75rem;
+        border-bottom-right-radius: 0.75rem;
+        background-color: #f7f9fa; //changes background color of card body
         h2 {
             margin-top: 14.4px;
             font-size: 25px;
