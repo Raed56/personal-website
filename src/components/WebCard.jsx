@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/components/WebCard.scss";
-import projectImage from "../assets/images/projects.svg";
+
 import { ButtonSecondary } from "./ButtonSecondary";
 import { ButtonPrimary } from "./ButtonPrimary";
 
@@ -15,7 +15,7 @@ export const WebCard = ({
     return (
         <div className="card">
             <div className="card-media">
-                <img src="https://niloy.io/img/pocket.png" alt="An image" />
+                <img src="https://niloy.io/img/pocket.png" alt="Project " />
             </div>
             <div className="card-body">
                 <h2>{cardTitle}</h2>

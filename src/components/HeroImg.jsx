@@ -15,7 +15,7 @@ const HeroImg = () => {
     };
     return (
         <div className="hero-img">
-            <img src={myImage} alt="my picture" />
+            <img src={myImage} alt="Raed" />
             <div className="hero-img-border">
                 <svg
                     viewBox="0 0 456 456"
