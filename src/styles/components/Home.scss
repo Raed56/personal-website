@@ -1,1 +1,9 @@
 @import "../index.scss";
+
+.homepage {
+    min-height: 100vh;
+    display: flex;
+    @include screen-size-down($md) {
+        flex-direction: column;
+    }
+}
