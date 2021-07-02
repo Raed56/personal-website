@@ -10,7 +10,7 @@ const HeroImg = () => {
         },
         visible: {
             pathLength: 1,
-            transition: { duration: 3.5, ease: "easeInOut" },
+            transition: { duration: 2, ease: "easeInOut" },
         },
     };
     return (
