@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/components/ButtonSecondary.scss";
 
-export const ButtonSecondary = ({ buttonText, href }) => {
+const ButtonSecondary = ({ buttonText, href }) => {
     return (
         <a
             className="button-secondary"
@@ -13,3 +13,5 @@ export const ButtonSecondary = ({ buttonText, href }) => {
         </a>
     );
 };
+
+export default ButtonSecondary;

@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/components/ButtonPrimary.scss";
 
-export const ButtonPrimary = ({ buttonText, href }) => {
+const ButtonPrimary = ({ buttonText, href }) => {
     return (
         <a
             className="button-primary"
@@ -13,3 +13,5 @@ export const ButtonPrimary = ({ buttonText, href }) => {
         </a>
     );
 };
+
+export default ButtonPrimary;

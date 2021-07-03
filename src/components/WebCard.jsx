@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/components/WebCard.scss";
 
-import { ButtonSecondary } from "./ButtonSecondary";
-import { ButtonPrimary } from "./ButtonPrimary";
+import ButtonSecondary from "./ButtonSecondary";
+import ButtonPrimary from "./ButtonPrimary";
 
 export const WebCard = ({
     cardImage,
