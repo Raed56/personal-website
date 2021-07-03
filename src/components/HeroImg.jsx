@@ -27,7 +27,7 @@ const HeroImg = () => {
                         initial="hidden"
                         animate="visible"
                         d="M3 3.5C76.0855 4.00223 268.405 4.70536 453 3.5V453.5H3V3.5Z"
-                        stroke="#4F46EF"
+                        stroke="#4f46ef"
                         strokeWidth="5"
                     />
                 </svg>
