@@ -2,6 +2,7 @@ import React from "react";
 import HeroImg from "../HeroImg";
 import "../../styles/components/Home.scss";
 import ButtonSecondary from "../../components/ButtonSecondary";
+import resume from "../../assets/resume_raed.pdf";
 
 const Home = () => {
     return (
@@ -24,7 +25,7 @@ const Home = () => {
                 <p>Tampa, FL, USA</p>
 
                 <div className="resume-button">
-                    <ButtonSecondary buttonText="Resume" href="#" />
+                    <ButtonSecondary buttonText="Resume" href={resume} />
                 </div>
             </div>
         </div>

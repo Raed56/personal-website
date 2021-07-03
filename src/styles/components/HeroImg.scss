@@ -8,8 +8,8 @@
     text-align: center;
 
     @include screen-size-down($md) {
-        width: 355.2px;
-        height: 186.4px;
+        width: 320px;
+        height: 167.76px;
     }
 
     img {
@@ -35,7 +35,7 @@
             width: 180px;
             height: 180px;
             top: 9%;
-            left: 30%;
+            left: 27%;
         }
     }
 }
