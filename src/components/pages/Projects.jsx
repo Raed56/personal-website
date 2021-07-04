@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/components/Projects.scss";
-import { SectionHeader } from "./SectionHeader";
-import { WebCard } from "./WebCard";
+import "../../styles/components/Projects.scss";
+import SectionHeader from "../../components/SectionHeader";
+import WebCard from "../../components/WebCard";
 
 const Projects = () => {
     return (

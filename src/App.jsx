@@ -1,4 +1,4 @@
-import Projects from "./components/Projects";
+import Projects from "./components/pages/Projects";
 import Home from "./components/pages/Home";
 
 function App() {

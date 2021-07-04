@@ -4,7 +4,7 @@ import "../styles/components/WebCard.scss";
 import ButtonSecondary from "./ButtonSecondary";
 import ButtonPrimary from "./ButtonPrimary";
 
-export const WebCard = ({
+const WebCard = ({
     cardImage,
     cardTitle,
     cardBody,
@@ -59,3 +59,5 @@ export const WebCard = ({
         </div>
     );
 };
+
+export default WebCard;
