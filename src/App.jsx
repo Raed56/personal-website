@@ -1,11 +1,13 @@
 import Projects from "./components/pages/Projects";
 import Home from "./components/pages/Home";
+import Contact from "./components/pages/Contact";
 
 function App() {
     return (
         <div className="page-container">
             <Home />
             <Projects />
+            <Contact />
         </div>
     );
 }

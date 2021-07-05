@@ -1,5 +1,7 @@
 @import "../index.scss";
 .project-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
     &-row {
         display: flex;
         flex-wrap: wrap;
