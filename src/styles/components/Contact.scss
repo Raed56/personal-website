@@ -42,7 +42,7 @@
         div {
             text-align: center;
             @include screen-size-down($sm) {
-                margin-bottom: 18px;
+                margin-bottom: 20px;
             }
 
             a {
