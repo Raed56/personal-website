@@ -2,6 +2,10 @@
 .project-container {
     padding-top: 70px;
     padding-bottom: 70px;
+    @include screen-size-down($sm) {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
     &-row {
         display: flex;
         flex-wrap: wrap;
