@@ -23,5 +23,12 @@
             padding-top: 35px;
             padding-bottom: 20px;
         }
+        a {
+            text-decoration: none;
+            color: cornflowerblue;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
