@@ -1,18 +1,27 @@
 @import "../index.scss";
 
 .footer-container {
-    min-height: 100px;
+    min-height: 150px;
     width: 100%;
 
     background-color: $color-text-grey-2;
     display: flex;
     justify-content: center;
+    @include screen-size-down($sm) {
+        min-height: 120px;
+    }
 
     &-text {
+        display: block;
         font-size: 18px;
         color: white;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 50px;
         padding-bottom: 30px;
+        @include screen-size-down($sm) {
+            font-size: 16px;
+            padding-top: 35px;
+            padding-bottom: 20px;
+        }
     }
 }

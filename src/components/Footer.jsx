@@ -6,8 +6,9 @@ const Footer = () => {
         <div className="footer-container">
             <div className="footer-container-text">
                 <p>
-                    <span>&copy; 2021 </span>Designed and Built by Raed Seraj
+                    <span>&copy; 2021 </span>Designed & Built by Raed Seraj
                 </p>
+                <p>Hosted on Netlify</p>
             </div>
         </div>
     );
