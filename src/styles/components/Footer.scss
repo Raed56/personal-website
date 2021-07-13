@@ -1,0 +1,18 @@
+@import "../index.scss";
+
+.footer-container {
+    min-height: 100px;
+    width: 100%;
+
+    background-color: $color-text-grey-2;
+    display: flex;
+    justify-content: center;
+
+    &-text {
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
