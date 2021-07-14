@@ -2,12 +2,14 @@ import Projects from "./components/pages/Projects";
 import Home from "./components/pages/Home";
 import Contact from "./components/pages/Contact";
 import Footer from "./components/Footer";
+import About from "./components/pages/About";
 
 function App() {
     return (
         <div>
             <div className="page-container">
                 <Home />
+                <About />
                 <Projects />
                 <Contact />
             </div>
