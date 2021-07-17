@@ -31,8 +31,8 @@
         &-section {
             max-width: 350px;
             padding: 0 15px;
-            @include screen-size-down($md) {
-                padding-bottom: 40px;
+            @include screen-size-down($lg) {
+                padding-bottom: 48px;
             }
             @include screen-size-down($sm) {
                 padding-bottom: 25px;
