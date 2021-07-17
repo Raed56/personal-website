@@ -32,7 +32,10 @@
             max-width: 350px;
             padding: 0 15px;
             @include screen-size-down($lg) {
-                padding-bottom: 22px;
+                padding-bottom: 40px;
+            }
+            @include screen-size-down($md) {
+                padding-bottom: 25px;
             }
 
             &-heading {
