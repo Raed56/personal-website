@@ -4,6 +4,7 @@
     font-size: 40px;
     color: #1f2937;
     position: relative;
+    font-weight: 600;
     @include screen-size-down($sm) {
         font-size: 28px; //was 30pxx
     }

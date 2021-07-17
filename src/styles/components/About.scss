@@ -1,10 +1,60 @@
 @import "../index.scss";
 
-.about-container {
+.about {
     padding-top: 70px;
     padding-bottom: 70px;
+    min-height: 100vh;
     @include screen-size-down($sm) {
         padding-top: 35px;
         padding-bottom: 35px;
+    }
+    &-text {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        font-size: 26px;
+        text-align: center;
+        @include screen-size-down($sm) {
+            font-size: 18px;
+            padding: 30px 15px;
+        }
+    }
+    &-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include screen-size-down($sm) {
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-section {
+            max-width: 350px;
+            padding: 0 15px;
+            @include screen-size-down($lg) {
+                margin-bottom: 22px;
+            }
+
+            &-heading {
+                color: $color-primary;
+                font-size: 22px;
+
+                font-weight: 700;
+
+                padding-bottom: 14px;
+            }
+            &-subheading {
+                font-size: 18px;
+                color: #888;
+
+                padding-bottom: 14px;
+            }
+            &-content {
+                font-size: 19px;
+                font-family: "Fira Code", monospace;
+                font-weight: 500;
+                padding-bottom: 14px;
+            }
+        }
     }
 }
