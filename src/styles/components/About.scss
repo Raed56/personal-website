@@ -44,18 +44,27 @@
                 font-weight: 700;
 
                 padding-bottom: 14px;
+                @include screen-size-down($sm) {
+                    font-size: 18px;
+                }
             }
             &-subheading {
                 font-size: 18px;
                 color: #888;
 
                 padding-bottom: 14px;
+                @include screen-size-down($sm) {
+                    font-size: 16px;
+                }
             }
             &-content {
                 font-size: 19px;
                 font-family: "Fira Code", monospace;
                 font-weight: 500;
                 padding-bottom: 14px;
+                @include screen-size-down($sm) {
+                    font-size: 17px;
+                }
             }
         }
     }
