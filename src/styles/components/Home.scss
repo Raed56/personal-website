@@ -14,8 +14,8 @@
         padding-top: 35px;
     }
     @include screen-size-down($sm) {
-        padding-bottom: 120px;
-        padding-top: 120px;
+        padding-bottom: 90px;
+        padding-top: 90px;
     }
     &-text {
         margin-left: 56px;
