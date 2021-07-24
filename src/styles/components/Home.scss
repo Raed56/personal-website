@@ -7,7 +7,7 @@
     padding-bottom: 180px;
 
     @include screen-size-down($lg) {
-        min-height: 75vh;
+        // min-height: 75vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
