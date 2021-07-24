@@ -1,17 +1,23 @@
 @import "../index.scss";
 
 .homepage {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 180px;
+    padding-bottom: 180px;
 
     @include screen-size-down($lg) {
+        min-height: 75vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-bottom: 35px;
         padding-top: 35px;
+    }
+    @include screen-size-down($sm) {
+        min-height: 45vh;
+        padding-bottom: 120px;
+        padding-top: 120px;
     }
     &-text {
         margin-left: 56px;

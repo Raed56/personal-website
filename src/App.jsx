@@ -1,4 +1,5 @@
 import Projects from "./components/pages/Projects";
+import Navbar from "./components/Navbar";
 import Home from "./components/pages/Home";
 import Contact from "./components/pages/Contact";
 import Footer from "./components/Footer";
@@ -7,7 +8,8 @@ import About from "./components/pages/About";
 function App() {
     return (
         <div>
-            <div className="page-container">
+            <div>
+                <Navbar />
                 <Home />
                 <About />
                 <Projects />
