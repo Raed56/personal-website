@@ -1,13 +1,12 @@
 @import "../index.scss";
 
 .homepage {
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     padding-top: 180px;
     padding-bottom: 180px;
 
     @include screen-size-down($lg) {
-        // min-height: 75vh;
         flex-direction: column;
         justify-content: center;
         align-items: center;
