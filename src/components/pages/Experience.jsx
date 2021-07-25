@@ -7,7 +7,7 @@ const Experience = () => {
     return (
         <div className="experience">
             <div className="page-container">
-                <SectionHeader headerText="Work" />
+                <SectionHeader headerText="Experience" />
                 <div className="experience-timeline">
                     <Timeline>
                         <Event
