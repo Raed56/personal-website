@@ -1,0 +1,72 @@
+@import "../index.scss";
+
+.timeline {
+    position: relative;
+    max-width: 95%;
+    list-style: none;
+    &:before {
+        background-color: rgba(79, 70, 239, 0.66);
+        content: "";
+        margin-left: -1px;
+        position: absolute;
+        top: 0;
+        left: 2em;
+        width: 2px;
+        height: 100%;
+    }
+    &-container {
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 0.05em;
+    }
+    &-event {
+        position: relative;
+    }
+    &-icon {
+        transform: rotate(45deg);
+        // border-radius: 50%;
+        background-color: $color-primary;
+        outline: 10px solid white;
+        display: block;
+        margin: 0.5em 0.5em 0.5em -0.5em;
+        position: absolute;
+        top: 0;
+        left: 2em;
+        width: 1em;
+        height: 1em;
+    }
+    &-body {
+        padding: 2em 2em 0 2em;
+        position: relative;
+        top: -1.875em;
+        left: 2em;
+        width: 95%;
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 1.2em;
+        }
+        &-description {
+            p {
+                font-weight: 400;
+                font-size: 18px;
+            }
+        }
+        &-date {
+            color: #888;
+
+            display: inline-block;
+            margin-bottom: 1.2em;
+
+            font-weight: 500;
+            font-size: 16px;
+        }
+        &-subtitle {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+}
