@@ -43,7 +43,7 @@ const Experience = () => {
                         >
                             Worked as a teaching assistant for a high school
                             Mathematics teacher. Graded the assignments of 100+
-                            students in Pure and General Mathematics.Tutored 3
+                            students in Pure and General Mathematics. Tutored 3
                             students in IGCSE ‘O’ Level and Advanced ‘A’ Level
                             Physics, Chemistry, and Mathematics.
                         </Event>

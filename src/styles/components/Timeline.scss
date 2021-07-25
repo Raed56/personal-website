@@ -42,9 +42,13 @@
         top: -1.875em;
         left: 2em;
         width: 95%;
+
         h3 {
             font-size: 24px;
             font-weight: 600;
+            @include screen-size-down($sm) {
+                font-size: 18px;
+            }
         }
         p {
             margin-bottom: 1.2em;
@@ -53,6 +57,9 @@
             p {
                 font-weight: 400;
                 font-size: 18px;
+                @include screen-size-down($sm) {
+                    font-size: 16px;
+                }
             }
         }
         &-date {
@@ -67,6 +74,9 @@
         &-subtitle {
             font-size: 20px;
             font-weight: 500;
+            @include screen-size-down($sm) {
+                font-size: 17px;
+            }
         }
     }
 }
