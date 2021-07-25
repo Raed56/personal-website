@@ -1,3 +1,8 @@
+/*
+This code is inspired from https://github.com/project-cemetery/react-timeline-scribble
+
+*/
+
 import React from "react";
 import "../styles/components/Timeline.scss";
 
