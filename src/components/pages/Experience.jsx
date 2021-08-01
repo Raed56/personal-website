@@ -15,7 +15,7 @@ const Experience = () => {
                             title={
                                 "College of Engineering, University of South Florida"
                             }
-                            subtitle={"Teaching Assistant"}
+                            subtitle={"-Teaching Assistant"}
                         >
                             Assisted the professor to conduct the Foundations of
                             Engineering class consisting of 80+ students.
@@ -28,7 +28,7 @@ const Experience = () => {
                             title={
                                 "University of  South Florida Dining Services"
                             }
-                            subtitle={"Cashier and Food Services Employee"}
+                            subtitle={"-Cashier and Food Services Employee"}
                         >
                             Worked as a cashier at various Fast Food outlets at
                             the USF campus, including, Subway, Panda Express,
@@ -39,7 +39,7 @@ const Experience = () => {
                         <Event
                             interval={"Aug 2018 - Aug 2019"}
                             title={"Academia School"}
-                            subtitle={"Private Tutor and Teaching Assistant"}
+                            subtitle={"-Private Tutor and Teaching Assistant"}
                         >
                             Worked as a teaching assistant for a high school
                             Mathematics teacher. Graded the assignments of 100+
@@ -50,7 +50,7 @@ const Experience = () => {
                         <Event
                             interval={"Jul 2018 - Nov 2018"}
                             title={"Jaago Foundation"}
-                            subtitle={"Project Development Intern"}
+                            subtitle={"-Project Development Intern"}
                         >
                             Interned at a large humanitarian organization that
                             serves underprivileged children in Bangladesh.

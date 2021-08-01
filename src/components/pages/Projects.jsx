@@ -2,6 +2,7 @@ import React from "react";
 import "../../styles/components/Projects.scss";
 import SectionHeader from "../../components/SectionHeader";
 import WebCard from "../../components/WebCard";
+import PersonalWebImg from "../../assets/images/personal-website.png";
 
 const Projects = () => {
     return (
@@ -11,7 +12,7 @@ const Projects = () => {
                 <div className="project-container-row">
                     <div className="project-container-col">
                         <WebCard
-                            cardImage="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                            cardImage={PersonalWebImg}
                             cardTitle="Personal Website"
                             cardBody="This is the first iteration of my personal website that i built using React and Sass. It showcases all my skills, experiences, projects and contact information."
                             languageTags={["React", "Sass"]}
@@ -21,7 +22,7 @@ const Projects = () => {
                     </div>
                     <div className="project-container-col">
                         <WebCard
-                            cardImage="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                            cardImage=""
                             cardTitle="Pocket"
                             cardBody="This is a budgeting application which I built with a friend and it shows the income, expenses and the net balance. This project taught me a lot of things."
                             languageTags={["NodeJs", "Express", "MongoDB"]}
@@ -43,10 +44,11 @@ const Projects = () => {
                     <div className="project-container-col">
                         <WebCard
                             cardImage="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-                            cardTitle="Future MERN Application"
-                            cardBody="Upcoming application which Niloy and I will be building over the summer 2021.I am writing stuff here to make the description four lines for a nice view."
-                            languageTags={["MongoDB", "React", "NodeJS"]}
-                            liveLink="https://github.com/Raed56"
+                            cardTitle="Github Battle"
+                            cardBody="This is a mini game-app which compares two GitHub users. I built this through a React course and learned about concepts like hooks, routers, states, etc."
+                            languageTags={["React", "Github API"]}
+                            liveLink="https://rseraj-github-battle.netlify.app/"
+                            githubLink="https://github.com/Raed56/github-battle"
                         />
                     </div>
                 </div>

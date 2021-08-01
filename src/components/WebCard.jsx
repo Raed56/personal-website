@@ -15,7 +15,7 @@ const WebCard = ({
     return (
         <div className="card">
             <div className="card-media">
-                <img src="https://niloy.io/img/pocket.png" alt="Project " />
+                <img src={cardImage} alt="Project " />
             </div>
             <div className="card-body">
                 <h2>{cardTitle}</h2>

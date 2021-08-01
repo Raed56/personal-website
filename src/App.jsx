@@ -16,7 +16,6 @@ function App() {
                 <Experience />
                 <Projects />
                 <Contact />
-                {/* change font size in about section and conatct section for Ipads */}
             </div>
             <footer>
                 <Footer />
