@@ -14,7 +14,7 @@
         padding-bottom: 60px;
         font-size: 26px;
         text-align: center;
-        @include screen-size-down($sm) {
+        @include screen-size-down($md) {
             font-size: 18px;
             padding: 35px 15px;
         }
