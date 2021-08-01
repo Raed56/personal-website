@@ -21,6 +21,9 @@
         span {
             color: $color-primary;
         }
+        @include screen-size-down($md) {
+            font-size: 32px;
+        }
         @include screen-size-down($sm) {
             margin-top: 35px;
             margin-bottom: 35px;
