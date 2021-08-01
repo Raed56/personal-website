@@ -1,36 +1,24 @@
 @import "../index.scss";
 
-.navbar {
-    display: block;
-    width: 100%;
-    height: 70px;
-    padding: 11.2px 24px;
-    z-index: 10;
-    position: fixed;
-    background: white;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0 8px 8px -10px rgba(0, 0, 0, 0.15);
-}
+//logo animation css below
 
 #logo {
     // position: absolute;
     // // top: 50%;
     // // left: 50%;
     // transform: translate(-50%, -50%);
-    animation: fill 1s ease forwards 1.75s;
+    animation: fill 2s ease forwards 2s;
 }
 
 #logo path:nth-child(1) {
     stroke-dasharray: 289.78533935546875;
     stroke-dashoffset: 289.78533935546875;
-    animation: line-anim 1.5s ease forwards;
+    animation: line-anim 2s ease forwards;
 }
 #logo path:nth-child(2) {
     stroke-dasharray: 260.6763610839844;
     stroke-dashoffset: 260.6763610839844;
-    animation: line-anim 1.5s ease forwards;
+    animation: line-anim 2s ease forwards;
 }
 
 @keyframes line-anim {
@@ -62,6 +50,37 @@
 }
 
 .rs-animation svg {
-    height: 42px;
-    width: 42px;
+    height: 40px;
+    width: 40px;
+}
+
+.navbar {
+    display: block;
+    width: 100%;
+    // height: 70px;
+    padding: 0px 24px;
+    z-index: 10;
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 8px 8px -10px rgba(0, 0, 0, 0.15);
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    li {
+        padding: 8px;
+        vertical-align: center;
+        font-size: 18px;
+        font-weight: 600;
+    }
 }
