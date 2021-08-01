@@ -4,7 +4,7 @@ import SectionHeader from "../SectionHeader";
 
 const Contact = () => {
     return (
-        <div className="contact-container ">
+        <div className="contact-container " id="contact">
             <div className="page-container">
                 <SectionHeader headerText="Contact" />
                 <div className="contact-container-text">

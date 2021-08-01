@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/components/Navbar.scss";
+import { Link } from "react-scroll";
 
 const NavbarBrand = () => {
     return (
@@ -33,11 +34,56 @@ const Navbar = () => {
             <nav className="page-container navbar-nav">
                 <NavbarBrand />
                 <ul className="nav-items">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Work</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <Link
+                        activeClass="active"
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={600}
+                    >
+                        Home
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={600}
+                    >
+                        About
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="experience"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={600}
+                    >
+                        Work
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={600}
+                    >
+                        Projects
+                    </Link>
+                    <Link
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={600}
+                    >
+                        Contact
+                    </Link>
                 </ul>
             </nav>
         </header>

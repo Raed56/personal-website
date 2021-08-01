@@ -4,7 +4,7 @@ import SectionHeader from "../SectionHeader";
 
 const About = () => {
     return (
-        <div className="about ">
+        <div className="about " id="about">
             <div className="page-container">
                 <SectionHeader headerText="About" />
                 <div className="about-text">

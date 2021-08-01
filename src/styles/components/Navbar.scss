@@ -50,8 +50,8 @@
 }
 
 .rs-animation svg {
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
 }
 
 .navbar {
@@ -77,10 +77,17 @@
     display: flex;
     align-items: center;
 
-    li {
+    a {
         padding: 8px;
-        vertical-align: center;
-        font-size: 18px;
-        font-weight: 600;
+        vertical-align: middle;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+        color: $color-text-grey-2;
     }
+}
+
+.nav-items > .active {
+    color: black;
+    font-weight: 600;
 }

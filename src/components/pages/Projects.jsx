@@ -5,7 +5,7 @@ import WebCard from "../../components/WebCard";
 
 const Projects = () => {
     return (
-        <div className="project-container">
+        <div className="project-container" id="projects">
             <div className="page-container">
                 <SectionHeader headerText="My Projects" />
                 <div className="project-container-row">

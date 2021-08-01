@@ -6,7 +6,7 @@ import resume from "../../assets/resume_raed.pdf";
 
 const Home = () => {
     return (
-        <div className="homepage page-container">
+        <div className="homepage page-container" id="home">
             <div>
                 <HeroImg />
             </div>
