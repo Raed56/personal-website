@@ -12,7 +12,7 @@ const About = () => {
                         I am currently a Junior in the University of South
                         Florida pursuing a Computer Engineering degree. My knack
                         for gaming as a child always made me curious of the
-                        realm between hardware and software. I aspire to tread
+                        realm between hardware and software. I'd love to tread
                         and explore between the dimensions throughout my career.
                         But when I am not building stuff, I am either playing
                         the guitar or making the perfect cup of hot chocolate.
