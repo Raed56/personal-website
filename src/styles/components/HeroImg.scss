@@ -15,6 +15,8 @@
     img {
         width: 350px;
         height: 350px;
+        // border-color: black 5px;
+        border-radius: 0.35rem;
 
         @include screen-size-down($md) {
             width: 180px;
@@ -27,6 +29,7 @@
         top: 6%;
         left: 12%;
         display: inline-block;
+        // display: none;
         width: 350px;
         height: 350px;
         z-index: -100;

@@ -1,0 +1,7 @@
+@import "../src/styles/index.scss";
+
+.main-section {
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in;
+}

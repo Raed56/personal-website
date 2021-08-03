@@ -10,8 +10,11 @@
     &-row {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
+        @include screen-size-down($lg) {
+            justify-content: space-evenly;
+        }
     }
     &-col {
         margin-top: 50px; //was 40px
