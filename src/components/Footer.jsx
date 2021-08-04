@@ -3,7 +3,7 @@ import "../styles/components/Footer.scss";
 
 const Footer = () => {
     return (
-        <div className="footer-container">
+        <footer className="footer-container">
             <div className="footer-container-text">
                 <p>
                     <span>&copy; 2021 </span>Designed & Built by Raed Seraj
@@ -19,7 +19,7 @@ const Footer = () => {
                     </a>
                 </p>
             </div>
-        </div>
+        </footer>
     );
 };
 
