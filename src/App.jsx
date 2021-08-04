@@ -19,15 +19,17 @@ function App() {
             setloadingRef(true);
             setTimeout(() => {
                 setMainRef(true);
-            }, 1550);
-        }, 2000);
+            }, 1163); //intial delay was 1550
+        }, 1500); // initial delay was 2000
     }, []);
 
     return (
         <div>
-            <div className={loadingRef ? "loading-fade-out" : "loading"}>
-                {!mainRef && <Loader />}
-            </div>
+            {!mainRef && (
+                <div className={loadingRef ? "loading-fade-out" : "loading"}>
+                    <Loader />
+                </div>
+            )}
 
             <section
                 className={

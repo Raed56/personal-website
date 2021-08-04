@@ -7,11 +7,12 @@
     &-active {
         display: block;
         opacity: 1;
-        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-        -o-animation: fadein 2s; /* Opera < 12.1 */
-        animation: fadein 2s;
+        // initial fade in was 2s
+        -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 1.5s; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+        -o-animation: fadein 1.5s; /* Opera < 12.1 */
+        animation: fadein 1.5s;
 
         @keyframes fadein {
             from {
@@ -69,13 +70,13 @@
     opacity: 1;
     &-fade-out {
         opacity: 0;
-        // display: none;
 
-        -webkit-animation: fadeout 2s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadeout 2s; /* Firefox < 16 */
-        -ms-animation: fadeout 2s; /* Internet Explorer */
-        -o-animation: fadeout 2s; /* Opera < 12.1 */
-        animation: fadeout 2s;
+        // initial fade out was 2s
+        -webkit-animation: fadeout 1.5s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadeout 1.5s; /* Firefox < 16 */
+        -ms-animation: fadeout 1.5s; /* Internet Explorer */
+        -o-animation: fadeout 1.5s; /* Opera < 12.1 */
+        animation: fadeout 1.5s;
         // animation-fill-mode: forwards;
 
         @keyframes fadeout {
