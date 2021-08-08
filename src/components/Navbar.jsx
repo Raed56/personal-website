@@ -34,7 +34,7 @@ const Navbar = () => {
     const navitemsRef = useRef(null);
 
     const hamburgerHandler = () => {
-        if (hamburgerRef !== null && hamburgerHandler !== undefined) {
+        if (hamburgerRef !== null && hamburgerRef !== undefined) {
             hamburgerRef.current.classList.toggle("active");
             if (navitemsRef !== null && navitemsRef !== undefined) {
                 navitemsRef.current.classList.toggle("active");
@@ -43,7 +43,7 @@ const Navbar = () => {
     };
 
     const navLinkHandler = () => {
-        if (hamburgerRef !== null && hamburgerHandler !== undefined) {
+        if (hamburgerRef !== null && hamburgerRef !== undefined) {
             hamburgerRef.current.classList.remove("active");
             if (navitemsRef !== null && navitemsRef !== undefined) {
                 navitemsRef.current.classList.remove("active");
