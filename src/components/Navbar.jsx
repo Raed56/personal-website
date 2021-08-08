@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/components/Navbar.scss";
 import { Link } from "react-scroll";
 import { useRef } from "react";
@@ -43,66 +42,107 @@ const Navbar = () => {
         }
     };
 
+    const navLinkHandler = () => {
+        if (hamburgerRef !== null && hamburgerHandler !== undefined) {
+            hamburgerRef.current.classList.remove("active");
+            if (navitemsRef !== null && navitemsRef !== undefined) {
+                navitemsRef.current.classList.remove("active");
+            }
+        }
+    };
+
+    const navLinksArray = [
+        {
+            className: "nav-link",
+
+            activeClass: "active",
+            to: "home",
+            spy: true,
+            smooth: true,
+            offset: -10,
+            duration: 600,
+            name: "Home",
+        },
+        {
+            className: "nav-link",
+
+            activeClass: "active",
+            to: "about",
+            spy: true,
+            smooth: true,
+            offset: -10,
+            duration: 600,
+            name: "About",
+        },
+        {
+            className: "nav-link",
+
+            activeClass: "active",
+            to: "experience",
+            spy: true,
+            smooth: true,
+            offset: -10,
+            duration: 600,
+            name: "Work",
+        },
+        {
+            className: "nav-link",
+
+            activeClass: "active",
+            to: "projects",
+            spy: true,
+            smooth: true,
+            offset: -10,
+            duration: 600,
+            name: "Projects",
+        },
+        {
+            className: "nav-link",
+
+            activeClass: "active",
+            to: "contact",
+            spy: true,
+            smooth: true,
+            offset: -10,
+            duration: 600,
+            name: "Contact",
+        },
+    ];
+
     return (
         <header className="navbar">
             <nav className="page-container navbar-nav">
                 <NavbarBrand />
                 <ul className="nav-items" ref={navitemsRef}>
-                    <Link
-                        className="nav-link"
-                        activeClass="active"
-                        to="home"
-                        spy={true}
-                        smooth={true}
-                        offset={-10}
-                        duration={600}
-                    >
-                        Home
-                    </Link>
-                    <Link
-                        className="nav-link"
-                        activeClass="active"
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        offset={-10}
-                        duration={600}
-                    >
-                        About
-                    </Link>
-                    <Link
-                        className="nav-link"
-                        activeClass="active"
-                        to="experience"
-                        spy={true}
-                        smooth={true}
-                        offset={-10}
-                        duration={600}
-                    >
-                        Work
-                    </Link>
-                    <Link
-                        className="nav-link"
-                        activeClass="active"
-                        to="projects"
-                        spy={true}
-                        smooth={true}
-                        offset={-10}
-                        duration={600}
-                    >
-                        Projects
-                    </Link>
-                    <Link
-                        className="nav-link"
-                        activeClass="active"
-                        to="contact"
-                        spy={true}
-                        smooth={true}
-                        offset={-10}
-                        duration={600}
-                    >
-                        Contact
-                    </Link>
+                    {navLinksArray.map(
+                        (
+                            {
+                                className,
+                                activeClass,
+                                to,
+                                spy,
+                                smooth,
+                                offset,
+                                duration,
+                                name,
+                            },
+                            i
+                        ) => (
+                            <Link
+                                onClick={navLinkHandler}
+                                key={i}
+                                className={className}
+                                activeClass={activeClass}
+                                to={to}
+                                spy={spy}
+                                smooth={smooth}
+                                offset={offset}
+                                duration={duration}
+                            >
+                                {name}
+                            </Link>
+                        )
+                    )}
                 </ul>
                 <div
                     className="hamburger"

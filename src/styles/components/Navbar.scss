@@ -88,8 +88,8 @@
 
     @include screen-size-down($md) {
         position: fixed;
-        // left: -100%;
-        top: -100%;
+        right: -100%;
+        top: 57px;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
@@ -97,9 +97,10 @@
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        min-height: 100%;
 
         &.active {
-            top: 0;
+            right: 0;
         }
     }
 }
@@ -132,6 +133,6 @@
 
 .nav-link {
     @include screen-size-down($md) {
-        margin: 10px 0;
+        margin: 2rem 0;
     }
 }
