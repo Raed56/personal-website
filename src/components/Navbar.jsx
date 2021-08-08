@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/components/Navbar.scss";
 import { Link } from "react-scroll";
+import { useRef } from "react";
 
 const NavbarBrand = () => {
     return (
@@ -29,12 +30,26 @@ const NavbarBrand = () => {
 };
 
 const Navbar = () => {
+    const hamburgerRef = useRef(null);
+
+    const navitemsRef = useRef(null);
+
+    const hamburgerHandler = () => {
+        if (hamburgerRef !== null && hamburgerHandler !== undefined) {
+            hamburgerRef.current.classList.toggle("active");
+            if (navitemsRef !== null && navitemsRef !== undefined) {
+                navitemsRef.current.classList.toggle("active");
+            }
+        }
+    };
+
     return (
         <header className="navbar">
             <nav className="page-container navbar-nav">
                 <NavbarBrand />
-                <ul className="nav-items">
+                <ul className="nav-items" ref={navitemsRef}>
                     <Link
+                        className="nav-link"
                         activeClass="active"
                         to="home"
                         spy={true}
@@ -45,6 +60,7 @@ const Navbar = () => {
                         Home
                     </Link>
                     <Link
+                        className="nav-link"
                         activeClass="active"
                         to="about"
                         spy={true}
@@ -55,6 +71,7 @@ const Navbar = () => {
                         About
                     </Link>
                     <Link
+                        className="nav-link"
                         activeClass="active"
                         to="experience"
                         spy={true}
@@ -65,6 +82,7 @@ const Navbar = () => {
                         Work
                     </Link>
                     <Link
+                        className="nav-link"
                         activeClass="active"
                         to="projects"
                         spy={true}
@@ -75,6 +93,7 @@ const Navbar = () => {
                         Projects
                     </Link>
                     <Link
+                        className="nav-link"
                         activeClass="active"
                         to="contact"
                         spy={true}
@@ -85,6 +104,15 @@ const Navbar = () => {
                         Contact
                     </Link>
                 </ul>
+                <div
+                    className="hamburger"
+                    ref={hamburgerRef}
+                    onClick={hamburgerHandler}
+                >
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                </div>
             </nav>
         </header>
     );
