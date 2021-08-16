@@ -12,8 +12,8 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        @include screen-size-down($lg) {
-            justify-content: space-evenly;
+        @include screen-size-down($xl) {
+            justify-content: space-around;
         }
     }
     &-col {
