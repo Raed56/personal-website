@@ -10,11 +10,11 @@
     &-row {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        @include screen-size-down($xl) {
-            justify-content: space-around;
-        }
+        // @include screen-size-down($xl) {
+        //     justify-content: space-around;
+        // }
     }
     &-col {
         margin-top: 50px; //was 40px
